@@ -1,5 +1,5 @@
 #  Add your password
-password = 
+password = 'postgres'
 
 # Add your username
-username =
+username = 'postgres'

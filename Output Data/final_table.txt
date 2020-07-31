@@ -1,0 +1,72 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Close</th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open_Close</th>
+      <th>High_Low</th>
+      <th>Tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2020-07-24</td>
+      <td>1417.00</td>
+      <td>1416.01</td>
+      <td>1465.0</td>
+      <td>1366.54</td>
+      <td>0.99</td>
+      <td>98.46</td>
+      <td>Tesla solar panels are $1.49/Watt</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2020-07-24</td>
+      <td>1417.00</td>
+      <td>1416.01</td>
+      <td>1465.0</td>
+      <td>1366.54</td>
+      <td>0.99</td>
+      <td>98.46</td>
+      <td>Thank you on behalf of the Tesla team. We look forward to building Giga Texas!</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2020-07-23</td>
+      <td>1513.07</td>
+      <td>1678.95</td>
+      <td>1689.0</td>
+      <td>1480.77</td>
+      <td>-165.88</td>
+      <td>208.23</td>
+      <td>We are actually looking for revolutionary actuaries for Tesla Insurance! Please inquire, if interested.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2020-07-15</td>
+      <td>1546.01</td>
+      <td>1543.00</td>
+      <td>1550.0</td>
+      <td>1457.00</td>
+      <td>3.01</td>
+      <td>93.00</td>
+      <td>Great work by Tesla software engineering</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2020-07-14</td>
+      <td>1516.80</td>
+      <td>1556.00</td>
+      <td>1590.0</td>
+      <td>1431.00</td>
+      <td>-39.20</td>
+      <td>159.00</td>
+      <td>Tesla Autopilot was literally named after the term used in aviation. Also, what about Autobahn!?</td>
+    </tr>
+  </tbody>
+</table>

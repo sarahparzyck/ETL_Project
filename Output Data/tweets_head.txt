@@ -1,0 +1,60 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>user</th>
+      <th>text</th>
+      <th>date</th>
+      <th>retweets</th>
+      <th>favorites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1287839317537284096</td>
+      <td>elonmusk</td>
+      <td>Whether commercial or government, monopolies are bad for the people</td>
+      <td>2020-07-27 19:56:34+00:00</td>
+      <td>1848</td>
+      <td>13043</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1287829529721962499</td>
+      <td>elonmusk</td>
+      <td>Sounds great</td>
+      <td>2020-07-27 19:17:41+00:00</td>
+      <td>135</td>
+      <td>4722</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1287828284852535301</td>
+      <td>elonmusk</td>
+      <td>Haha</td>
+      <td>2020-07-27 19:12:44+00:00</td>
+      <td>16</td>
+      <td>1101</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1287824348460593154</td>
+      <td>elonmusk</td>
+      <td>Das Kapital in a nutshell</td>
+      <td>2020-07-27 18:57:05+00:00</td>
+      <td>43854</td>
+      <td>258196</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1287822920966905858</td>
+      <td>elonmusk</td>
+      <td>What I like most is their great sense of humor</td>
+      <td>2020-07-27 18:51:25+00:00</td>
+      <td>1239</td>
+      <td>32642</td>
+    </tr>
+  </tbody>
+</table>
