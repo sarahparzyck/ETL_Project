@@ -1,3 +1,3 @@
-# ETL_Project by Muskatweeters
+# ETL Project by Muskatweeters
 
 ![Image](Musk_Twitter_backgnd.jpg)
