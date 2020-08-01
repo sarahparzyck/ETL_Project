@@ -1,5 +1,5 @@
 # ETL Project by Muskatweeters
-Check it out @ https://sarahparzyck.github.io/ETL_Project/
+https://sarahparzyck.github.io/ETL_Project/
 
 # Executive Summary
 The Six Muskatweeters were interested in exploring whether Elon Musk’s prolific Twitter presence had meaningful impacts on the stock price of his electric car company and brainchild, Tesla. To do this, we scraped Mr. Musk’s Twitter profile for Tesla-related tweets and Yahoo Finance for daily Tesla stock data. We combined our data in Jupyter notebooks and loaded it into PostgreSQL for further analysis.
