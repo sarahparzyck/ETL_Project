@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootswatch CSS -->
+    <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/litera/bootstrap.min.css>
+
+    <!-- Using font awesome instead of glyphicon as bootstrap was classhing with bootswatch -->
+    <script src="https://use.fontawesome.com/e9c0b42f7c.js"></script>
+
+    <!-- Linking custom style sheet-->
+    <link rel="stylesheet" href="WebVisualizations/style.css">
+    
+    <!-- Website title -->
+    <title>Viso - Web Visualization Challenge</title>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id = 'nav'>
+        <div class= "container">
+            <a class="navbar-brand" href="index.html"><img src="WebVisualizations/Resources/assets/images/Viso_logo.png" class="img-responsive logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pr">
+                    <a class="nav-link" href="#jumbo_extract">EXTRACT</a>
+                    </li>
+                    <li class="nav-item pr">
+                        <a class="nav-link" href="#jumbo_transform">TRANSFORM</a>
+                        </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#jumbo_load">LOAD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Top Jumbotron Intro to Site -->
+    <div class="jumbotron" id = "jumbo1_home">
+        <div class="container" id = "jumbo1_home_content">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h1>EXTRACT . <span class = 'gradient'>TRANSFORM</span> . LOAD</h1>
+                    <br>
+                    <p class="lead white">The project scraps data from Yahoo Finance for Tesla stock price and Twitter for tweets by Tesla CEO Elon Musk. The data is further cleaned and merged on dates to see if Elons Musk tweets have any effect on stock price.</p>
+                    <br>
+                    <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#jumbo2_home" role="button">LEARN MORE<i class="fa fa-arrow-down"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Jumbotron TEAM -->
+    <div class="jumbotron" id = "jumbo2_home">
+        <div class="container" id = "jumbo2_home_content">
+            <div class = 'row justify-content-end'>
+                <div class = 'col-md-6' id="fig_temp">
+                    <img src="WebVisualizations/Resources/assets/images/Fig1.jpg" id = 'fig1' alt="latitiude vs max temperature graph">
+                </div>
+                <div class = 'col-md-6 mt-5' id = "team">
+                    <h1>THE <span class ="gradient">TEAM</span></h1>
+                    
+                    <ol class = "mt-5">
+                    <li class="lead" id = "sum_text_1">Sarah Parzyck</li>
+                    <li class="lead" id = "sum_text_1">Odille  Rodrigues</li>
+                    <li class="lead" id = "sum_text_1">Umar Farooq</li>
+                    <li class="lead" id = "sum_text_1">Ayan Guha</li>
+                    <li class="lead" id = "sum_text_1">Ben Pollock</li>
+                    <li class="lead" id = "sum_text_1">Mirgadir Alakbarov</li>
+                    </ol>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class = 'row'>
+                <div class = 'col-md-12 justify-content-center text-center'>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" id="btn_2" href="#jumbo_extract" role="button">EXTRACT<i class="fa fa-arrow-down"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extract Jumbotron Intro -->
+    <div class="jumbotron jumbo_extract_home" id = "jumbo_extract">
+        <div class="container" id = "jumbo_extract_home_content">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h1><span class = 'border1'>EXTRACT</span></h1>
+                    <br>
+                    <br>
+                    <p class="lead white" id="sum_text_2">The Six Musketweeters extracted daily Tesla stock (NASDAQ: TSLA) data from Yahoo Finance and combined that data with tweets from Elon Musk’s Twitter profile (@elonmusk).</p>
+                    <br>
+                    <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#jumbo3_home" role="button">LEARN MORE<i class="fa fa-arrow-down"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Jumbotron Extract -->
+    <div class="jumbotron" id = "jumbo3_home">
+        <div class="container" id = "jumbo3_home_content">
+            <div class = 'row justify-content-center text-center'>
+                <div class = 'col-md-12'>
+                    <h1><span class ="gradient">EXTRACT</span></h1>
+                    <hr class = 'my-4'>
+                    <p class="lead" id = "sum_text_2">Yahoo Finance and Twitter required custom BeautifulSoup/Splinter web scrapers. After extracting stock and social media data for the past 5 years (7-28-2015 to 7-28-2020), we were able to begin our data transformation. Following are the top five rows of raw tables we got after successful extraction. </p>
+                    <hr class = 'my-4'>
+                </div>
+            </div>
+            <div class = 'row justify-content-end'>
+                <div class = 'col-md-6 mt-2'>
+                    <h6>Tesla Stock Raw Table</h6>
+                    <table class="table table-hover table-responsive">
+                        <thead>
+                          <tr style="text-align: left;">
+                            <th></th>
+                            <th>Date</th>
+                            <th>Open</th>
+                            <th>High</th>
+                            <th>Low</th>
+                            <th>Close</th>
+                            <th>Adj Close</th>
+                            <th>Volume</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>0</th>
+                            <td>Jul 27, 2020</td>
+                            <td>1,435.00</td>
+                            <td>1,547.94</td>
+                            <td>1,413.00</td>
+                            <td>1,539.60</td>
+                            <td>1,539.60</td>
+                            <td>16,048,700</td>
+                          </tr>
+                          <tr>
+                            <th>1</th>
+                            <td>Jul 24, 2020</td>
+                            <td>1,416.01</td>
+                            <td>1,465.00</td>
+                            <td>1,366.54</td>
+                            <td>1,417.00</td>
+                            <td>1,417.00</td>
+                            <td>19,396,600</td>
+                          </tr>
+                          <tr>
+                            <th>2</th>
+                            <td>Jul 23, 2020</td>
+                            <td>1,678.95</td>
+                            <td>1,689.00</td>
+                            <td>1,480.77</td>
+                            <td>1,513.07</td>
+                            <td>1,513.07</td>
+                            <td>24,328,500</td>
+                          </tr>
+                          <tr>
+                            <th>3</th>
+                            <td>Jul 22, 2020</td>
+                            <td>1,599.00</td>
+                            <td>1,626.42</td>
+                            <td>1,562.00</td>
+                            <td>1,592.33</td>
+                            <td>1,592.33</td>
+                            <td>14,161,100</td>
+                          </tr>
+                          <tr>
+                            <th>4</th>
+                            <td>Jul 21, 2020</td>
+                            <td>1,639.93</td>
+                            <td>1,675.00</td>
+                            <td>1,558.00</td>
+                            <td>1,568.36</td>
+                            <td>1,568.36</td>
+                            <td>16,157,300</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                </div>
+                <div class = 'col-md-6 mt-2'>
+                    <h6>Tweets Raw Table</h6>
+                    <table class="table table-hover table-responsive">
+                        <thead>
+                          <tr style="text-align: left;">
+                            <th></th>
+                            <th>id</th>
+                            <th>user</th>
+                            <th>text</th>
+                            <th>date</th>
+                            <th>retweets</th>
+                            <th>favorites</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>0</th>
+                            <td>1287839317537284096</td>
+                            <td>elonmusk</td>
+                            <td>Whether commercial or government, monopolies are bad for the people</td>
+                            <td>2020-07-27 19:56:34+00:00</td>
+                            <td>1848</td>
+                            <td>13043</td>
+                          </tr>
+                          <tr>
+                            <th>1</th>
+                            <td>1287829529721962499</td>
+                            <td>elonmusk</td>
+                            <td>Sounds great</td>
+                            <td>2020-07-27 19:17:41+00:00</td>
+                            <td>135</td>
+                            <td>4722</td>
+                          </tr>
+                          <tr>
+                            <th>2</th>
+                            <td>1287828284852535301</td>
+                            <td>elonmusk</td>
+                            <td>Haha</td>
+                            <td>2020-07-27 19:12:44+00:00</td>
+                            <td>16</td>
+                            <td>1101</td>
+                          </tr>
+                          <tr>
+                            <th>3</th>
+                            <td>1287824348460593154</td>
+                            <td>elonmusk</td>
+                            <td>Das Kapital in a nutshell</td>
+                            <td>2020-07-27 18:57:05+00:00</td>
+                            <td>43854</td>
+                            <td>258196</td>
+                          </tr>
+                          <tr>
+                            <th>4</th>
+                            <td>1287822920966905858</td>
+                            <td>elonmusk</td>
+                            <td>What I like most is their great sense of humor</td>
+                            <td>2020-07-27 18:51:25+00:00</td>
+                            <td>1239</td>
+                            <td>32642</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class = 'row'>
+                <div class = 'col-md-12 justify-content-center text-center'>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" id="btn_2" href="#jumbo_transform" role="button">TRANSFORM<i class="fa fa-arrow-down"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extract Jumbotron Intro -->
+    <div class="jumbotron jumbo_tansform_home" id = "jumbo_transform">
+        <div class="container" id = "jumbo_extract_home_content">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h1><span class = 'border1'>TRANSFORM</span></h1>
+                    <br>
+                    <br>
+                    <p class="lead white" id= "sum_text_2">After importing our stock and tweet data into Jupyter notebooks, we began analyzing and cleansing the data for eventual loading into PostgreSQL.</p>
+                    <br>
+                    <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#jumbo4_home" role="button">LEARN MORE<i class="fa fa-arrow-down"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forth Jumbotron Transform -->
+    <div class="jumbotron" id = "jumbo4_home">
+        <div class="container" id = "jumbo3_home_content">
+            <div class = 'row justify-content-center text-center'>
+                <div class = 'col-md-12'>
+                    <h1><span class ="gradient">TRANSFORM</span></h1>
+                    <hr class = 'my-4'>
+                    <p class="lead" id = "sum_text_2">We began by loading the stock and tweet data into Pandas Dataframes and excluding extraneous columns from the data. For the purposes of the project, the we required only the Date, High, Low, Open and Close price from the Tesla stock data, together with the Date and Tweet fields from the Twitter data. We performed a str.contains(“esla”) to limit our dataset to Tweets specifically related to Tesla.<br><br>
+                        To calculate fluctuations in stock price, we had to strip out non-numeric characters (i.e. “,”). We then cast the High/Low/Open/Close columns as floats and created new columns to store the calculated values. Differences between open and close price were stored in Open_Close, while differences in high and low price were stored in High_Low.<br><br>
+                        In order to merge the stock and tweet dataframes, we standardized the date fields in each dataframe by casting them each as datetime64[ns]. Upon merging the dataframes, we were ready to load our data into PostgreSQL. <br><br>Following table represent the top five rows of our transformed data set.</p>
+                    <hr class = 'my-4'>
+                </div>
+            </div>
+            <div class = 'row justify-content-end'>
+                <div class = 'col-md-12 mt-2'>
+                    <h6>Final Data Table</h6>
+                    <table class="table table-hover table-responsive-lg">
+                        <thead>
+                          <tr style="text-align: left;">
+                            <th></th>
+                            <th>Date</th>
+                            <th>Close</th>
+                            <th>Open</th>
+                            <th>High</th>
+                            <th>Low</th>
+                            <th>Open_Close</th>
+                            <th>High_Low</th>
+                            <th>Tweet</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>0</th>
+                            <td>2020-07-24</td>
+                            <td>1417.00</td>
+                            <td>1416.01</td>
+                            <td>1465.0</td>
+                            <td>1366.54</td>
+                            <td>0.99</td>
+                            <td>98.46</td>
+                            <td>Tesla solar panels are $1.49/Watt</td>
+                          </tr>
+                          <tr>
+                            <th>1</th>
+                            <td>2020-07-24</td>
+                            <td>1417.00</td>
+                            <td>1416.01</td>
+                            <td>1465.0</td>
+                            <td>1366.54</td>
+                            <td>0.99</td>
+                            <td>98.46</td>
+                            <td>Thank you on behalf of the Tesla team. We look forward to building Giga Texas!</td>
+                          </tr>
+                          <tr>
+                            <th>2</th>
+                            <td>2020-07-23</td>
+                            <td>1513.07</td>
+                            <td>1678.95</td>
+                            <td>1689.0</td>
+                            <td>1480.77</td>
+                            <td>-165.88</td>
+                            <td>208.23</td>
+                            <td>We are actually looking for revolutionary actuaries for Tesla Insurance! Please inquire, if interested.</td>
+                          </tr>
+                          <tr>
+                            <th>3</th>
+                            <td>2020-07-15</td>
+                            <td>1546.01</td>
+                            <td>1543.00</td>
+                            <td>1550.0</td>
+                            <td>1457.00</td>
+                            <td>3.01</td>
+                            <td>93.00</td>
+                            <td>Great work by Tesla software engineering</td>
+                          </tr>
+                          <tr>
+                            <th>4</th>
+                            <td>2020-07-14</td>
+                            <td>1516.80</td>
+                            <td>1556.00</td>
+                            <td>1590.0</td>
+                            <td>1431.00</td>
+                            <td>-39.20</td>
+                            <td>159.00</td>
+                            <td>Tesla Autopilot was literally named after the term used in aviation. Also, what about Autobahn!?</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class = 'row'>
+                <div class = 'col-md-12 justify-content-center text-center'>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" id="btn_2" href="#jumbo_load" role="button">LOAD<i class="fa fa-arrow-down"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Jumbotron Intro -->
+    <div class="jumbotron jumbo_load_home" id = "jumbo_load">
+        <div class="container" id = "jumbo_extract_home_content">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h1><span class = 'border1'>LOAD</span></h1>
+                    <br>
+                    <br>
+                    <p class="lead white" id= "sum_text_2">Due to the highly structured nature of the data, we decided to load our data into a relational, PostgreSQL database.</p>
+                    <br>
+                    <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#jumbo_load" role="button">LEARN MORE<i class="fa fa-arrow-down"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fifth Jumbotron Load -->
+    <div class="jumbotron" id = "jumbo_load">
+        <div class="container" id = "jumbo2_home_content">
+            <div class = 'row justify-content-center text-center'>
+                <div class = 'col-md-12 mt-5'>
+                    <h1><span class ="gradient">LOAD</span></h1>
+                    <hr class = 'my-4'>
+                    <p class="lead" id= "sum_text_2">To prepare our dataframe for loading, we first converted it to CSV using the Pandas to_csv command. After that we connected to our local database, created a new database called tesla_final_db, and loaded the data into a new table called tesla using the Pandas to_sql command. Following image shows the result of a succesful connection with PostgreSQL.</p>
+                    <hr class = 'my-4'>
+                </div>
+            </div>
+            <div class = 'row justify-content-center'>
+                <div class = 'col-md-12' id="fig_temp">
+                    <img src="WebVisualizations/Resources/assets/images/sql.png" id = 'fig1' alt="latitiude vs max temperature graph">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class = 'row'>
+                <div class = 'col-md-12 justify-content-center text-center'>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" id="btn_2" href="#nav" role="button">BACK TO TOP<i class="fa fa-arrow-up"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- CyberTruck Jumbotron Intro -->
+     <div class="jumbotron jumbo_truck_home" id = "jumbo_load">
+        <div class="container" id = "jumbo_truck_home_content">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-12">
+                    <a href="WebVisualizations/musk.html" class = "white">
+                    <h2><span class = 'border1'>CLICK HERE TO WIN A CYBERTRUCK</span></h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to recall footer -->
+    <script language="javascript" type="text/javascript" src="WebVisualizations/footer.txt"></script>
+
+    <!-- JavaScript for bootstrap functionality-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

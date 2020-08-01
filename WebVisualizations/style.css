@@ -1,0 +1,272 @@
+/* Jumbo home 1 changes */
+.jumbotron{
+  border-radius: 0;
+}
+
+#jumbo1_home {
+  background-image: url("Resources/assets/images/jumbo1.jpg");
+  background-size: cover;
+  min-height: 600px;
+  background-position:center;
+  background-attachment: fixed;
+  margin-bottom: 0rem;
+  margin-top: -8rem;
+}
+
+#jumbo_musk {
+  background-image: url("Resources/assets/images/musk.jpg");
+  background-size: contain;
+  min-height: 600px;
+  background-position:center;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+/* home jumbo1 text spacing from top */
+#jumbo1_home_content {
+  margin-top: 300px;
+  margin-bottom: 120px;
+  color: white;
+  }
+
+#jumbo2_home,#jumbo4_home,#jumbo_load{
+  background-color: #fff;
+}
+
+/* Dividers Image Formatting*/
+.jumbo_extract_home {
+  background-image: url("Resources/assets/images/extract.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position:center;
+  background-attachment: fixed;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.jumbo_tansform_home {
+  background-image: url("Resources/assets/images/transform.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position:center;
+  background-attachment: fixed;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.jumbo_load_home {
+  background-image: url("Resources/assets/images/load.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position:center;
+  background-attachment: fixed;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.jumbo_truck_home {
+  background-image: url("Resources/assets/images/truck.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position:center;
+  background-attachment: fixed;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+/* home jumbo1 text spacing from top */
+#jumbo_extract_home_content {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  color: white;
+  }
+
+#jumbo_truck_home_content {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  color: white;
+  }
+
+.border1{
+  border: 3px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Team name text padding */
+@media (min-width: 800px) {
+#team{
+  padding-left: 120px;
+  padding-top: 15px;
+}
+}
+
+@media (max-width: 800px) {
+  #team{
+    padding-left: 20%;
+    padding-top: 5px;
+  }
+  }
+
+/* Navbar transparent color*/
+@media (min-width: 800px) {
+.navbar.bg-light{
+  background-color: transparent !important;
+  border: none;
+}
+
+.pr {
+  padding-right: 20px;
+}
+
+.white{
+  color: #fff;
+}
+
+.white:hover{
+  color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  transition: transform .2s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(226, 226, 226);
+  transform: scale(1.1);
+}
+}
+
+.nav-item{
+  font-weight: 600;
+}
+
+
+
+/* Changing text color of viso on jumbo1_home */
+.logo{
+ height: 55px;
+}
+
+/* Changing text color of viso on jumbo1_home */
+.gradient{
+  color: #00ab92;
+  background: -webkit-linear-gradient(20deg,#075e51,#00e0bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Changing First Button Color, Font and Radius */
+.btn {
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 25px;
+  border: 2px solid;
+}
+
+#btn_2 {
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 10px;
+  border: 2px solid #00ab92;
+  color: #00ab92;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Changing button initial cover*/
+.btn-primary {
+  color:#ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+/* Changing Button Color on Hover*/
+.btn-primary:hover {
+  color: #fff;
+  background-color:  #00ab92;
+  border-color:  #00ab92; 
+}
+
+#btn_2:hover {
+  color: #fff;
+  background-color:  #00ab92;
+  border-color:  #00ab92; 
+  border-radius: 10px;
+}
+
+/* Givning margin top and bottom on home second jumbotron for content spacing */
+#jumbo2_home_content {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  }
+
+#jumbo3_home{
+  margin-bottom: 0rem;
+}
+
+#jumbo3_home_content {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  }
+
+
+/* Jumbotron image formating*/
+#fig1 {
+  max-width: 100%;
+  border-radius: 10px;
+  /*box-shadow: 0 4px 8px 0 rgba(31, 31, 31, 0.2), 0 6px 20px 0 rgba(44, 44, 44, 0.19);*/
+  margin-bottom: 50px;
+}
+
+/* text formating */
+#sum_text_1 {
+  font-size: 20px;
+}
+
+#sum_text_2 {
+  font-size: 16px;
+}
+
+/* Footer formating */
+#foot {
+  border-top: 1px solid #dfdfdf;
+  color: #949494;
+}
+
+/* Copyright link formating */
+#copy_btn{
+  color: #00ab92;
+}
+
+#copy_btn:hover {
+  color: #12806f;
+}
+
+/* Font awsome icon margin left*/
+.fa{
+  margin-left: 10px;
+}
+
+/* Giving borders to big and small graphs area*/
+#big_graph, #small_graphs{
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+
+/* Changing navbar color to light grey when screen size less then 600 px & other changes*/
+@media (max-width: 800px) {
+  .navbar.bg-light {
+    background-color: #ffffff !important;
+}
+  #big_graph{
+    margin-bottom: 20px;
+  }
+}

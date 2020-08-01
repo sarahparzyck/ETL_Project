@@ -1,0 +1,1 @@
+document.write('<div class="footer-copyright text-center py-3" id="foot">© 2020 Copyright: <a href="https://github.com/sarahparzyck/ETL_Project" class="card-link" id="copy_btn">Musketweeters</a></div>')
